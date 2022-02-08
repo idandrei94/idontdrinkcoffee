@@ -117,7 +117,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       shops: await GetShops()
-    }
+    },
+    revalidate: 15
   };
 };
 
